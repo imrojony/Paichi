@@ -1,0 +1,230 @@
+/* about section style start */
+#container {
+  color: white;
+  /* background:url("../images/slide.jpg"); */
+  background:linear-gradient(0deg,rgba(255,0,150,0.3),rgba(255,0,150,0.3)),url("../images/slide.jpg");
+  background-size:cover;
+  width: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+/* about section style end */
+
+/* navbar style start */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navheight{
+  height: 49px;
+}
+/* navbar style end */
+
+/* card item style start*/
+.card-fix-height{
+  height: 400px;
+}
+/* card item style end */
+#content {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* footer section */
+.footer {
+  height: 200px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  
+  
+ }
+ 
+.icon-bar a:hover {
+  background-color:blue;
+}
+/* footer section end*/
+.facebook {
+  background: #3B5998;
+  color: white;
+   padding: 10px 10px
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+   padding: 10px 10px
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+   padding: 10px 10px
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+   padding: 10px 10px
+  
+}
+.dribbble{
+  background: #dd4b39;
+  padding: 10px 10px;
+}
+ul{
+  padding: 57px;
+}
+/* contact page style start */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.fixed contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.style{
+      max-width: 645px;
+    margin: 61px auto;
+}
+/* contact style End */
+
+/* registration page style or create account style */
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-google{
+    background-color: rgb(236, 66, 66);
+    color: #fff;
+}
+/* blog page style start*/
+.blogShort{ border-bottom:1px solid #ddd;}
+.add{background: #333; padding: 10%; height: 300px;}
+
+.nav-sidebar { 
+    width: 100%;
+    padding: 8px 0; 
+    border-right: 1px solid #ddd;
+}
+.nav-sidebar a {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+}
+.nav-sidebar .active a { 
+    cursor: default;
+    background-color: #34ca78; 
+    color: #fff; 
+}
+.nav-sidebar .active a:hover {
+    background-color: #37D980;   
+}
+.nav-sidebar .text-overflow a,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+
+.btn-blog {
+    color: #ffffff;
+    background-color: #37d980;
+    border-color: #37d980;
+    border-radius:0;
+    margin-bottom:10px
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: white;
+    background-color:#34ca78;
+    border-color: #34ca78;
+}
+ h2{color:#34ca78;}
+ .margin10{margin-bottom:10px; margin-right:10px;}
+
+
+/* blog page style end*/
