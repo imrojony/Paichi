@@ -15,18 +15,65 @@ body,h1,h2,h3,h4,h5,h6,span,div,section,p,container,a,li{
  
   
 }
+/* mobile-menu start */
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+/* Style the active link (or home/logo) */
+
+/* mobile-menu end */
+
+
+/* navbar style start */
 .active-nav{
-        background: rgb(0, 129, 75);
+        background:#73b909;
+    color: #fff !important;
+}
+.active-nav > a{
+        
     color: #fff !important;
 }
 /* about section style end */
 .seemore span a{
-    color:rgb(0, 129, 75); 
+    color:#73b909; 
 }
 
 /* navbar style start */
 .navbar {
-  overflow: hidden;
+
   background-color:white;;
   position: fixed;
   top: 0;
@@ -49,9 +96,9 @@ body,h1,h2,h3,h4,h5,h6,span,div,section,p,container,a,li{
   font-family: 'Raleway', sans-serif;
 }
 
-.navbar a:hover {
-  background:rgb(0, 129, 75) ;
-  color:#fff;
+.navbar li a:hover {
+  background:#73b909;
+  color:#fff!important;
 }
 
 .navheight{
@@ -93,16 +140,16 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: rgb(0, 129, 75);
+  background-color:#73b909;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 13px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #73b909;
 }
 
 .fixed contact {
@@ -166,11 +213,11 @@ input[type=submit]:hover {
 }
 .nav-sidebar .active a { 
     cursor: default;
-    background-color: #34ca78; 
+    background-color:#73b909; 
     color: #fff; 
 }
 .nav-sidebar .active a:hover {
-    background-color: #37D980;   
+    background-color: #73b909;   
 }
 .nav-sidebar .text-overflow a,
 .nav-sidebar .text-overflow .media-body {
@@ -182,8 +229,8 @@ input[type=submit]:hover {
 
 .btn-blog {
     color: #ffffff;
-    background-color: #37d980;
-    border-color: #37d980;
+    background-color: #73b909;
+    border-color: #73b909;
     border-radius:0;
     margin-bottom:10px
 }
@@ -193,10 +240,10 @@ input[type=submit]:hover {
 .btn-blog.active,
 .open .dropdown-toggle.btn-blog {
     color: white;
-    background-color:#34ca78;
-    border-color: #34ca78;
+    background-color:#73b909;
+    border-color: #73b909;
 }
- .tiyaColor{color:#34ca78;}
+ .tiyaColor{color:#73b909;}
  .darktiyaColor{color: rgb(70, 65, 119);}
 
  .margin10{margin-bottom:10px; margin-right:10px;};
@@ -204,15 +251,16 @@ input[type=submit]:hover {
 
 /* post item section style start */
 .cc-selector input{
-    margin:0;padding:0;
+    margin-top:20px;padding:0;
     -webkit-appearance:none;
        -moz-appearance:none;
             appearance:none;
 }
-.visa{background-image:url(../images/p6.jpg);}
-.mastercard{background-image:url(../images/p6.jpg);}
+.found{background-image:url(../images/found.png);}
+.lost{background-image:url(../images/lost.png);}
 
-.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+
+.cc-selector input:active +.drinkcard-cc{opacity: 1;}
 .cc-selector input:checked +.drinkcard-cc{
     -webkit-filter: none;
        -moz-filter: none;
@@ -223,18 +271,18 @@ input[type=submit]:hover {
     background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    width:185px;height:100px;
+    width:236px;height:180px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
+    -webkit-filter: brightness(1.2) grayscale(.7) opacity(1);
+       -moz-filter: brightness(1.2) grayscale(.7) opacity(1);
+            filter: brightness(1.2) grayscale(.7) opacity(1);
 }
 .drinkcard-cc:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-            filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -webkit-filter: brightness(1.2) grayscale(.7) opacity(1);
+       -moz-filter: brightness(1.2) grayscale(.7) opacity(1);
+            filter: brightness(1.2) grayscale(.7) opacity(1);
 }
 
 /* Extras */
@@ -418,7 +466,7 @@ input[type=submit]:hover {
 .page-footer {
  
   background-color:white;
-  border-top: solid 4px rgb(0, 129, 75) ;
+  border-top: solid 4px #73b909; ;
 
     top: 0;
     left: 0;
@@ -461,9 +509,16 @@ input[type=submit]:hover {
   background: #dd4b39;
   padding: 10px 10px;
 }
-ul{
-  padding: 15px;
+/* post-page style start */
+.margin{
+        margin: -34px 0 0 15px;
 }
+.post-height{
+        margin-left: 25px;
+            margin-top: 20px;
+}
+
+/* post-page style end */
 
 /* border */
 
