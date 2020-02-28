@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Paichi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,6 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="./assets/js/jwt-decode.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </head>
 <!--Navigation-->
 
@@ -41,18 +45,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="post.html">Post</a>
                 </li>
+                <li class="nav-item beforelogin">
+                    <a class="nav-link " href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item beforelogin">
+                    <a class="nav-link " href="login.html">Login</a>
+                </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown afterlogin">
+                    <a class="nav-link dropdown-toggle showUsername" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Myaccount
+                        Rojony
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Profile</a>
-                        <a class="dropdown-item" href="login.html">Login</a>
-                        <a class="dropdown-item" href="registration.html">Registration</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="profile.html">Profile</a>
+
+                        <a onclick="logOutMe()" class="dropdown-item" href="#">Logout</a>
                     </div>
                 </li>
 
@@ -64,11 +72,12 @@
         </div>
     </nav>
 
+
     <!-- About section-->
     <div class="container-fluid" id="container">
         <div id="content">
             <h2 class="tiyaColor">Paichi</h2>
-            <p>Paichi is an interseting technique for finding any lost item of a person.just search below</p>
+            <p>Paichi is an awesome technique for finding any lost item of a person.just search below</p>
         </div>
     </div>
     <!-- grib -->
@@ -92,16 +101,18 @@
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">Log In</h5>
-                        <form class="form-signin">
+                        <h6 id="loginSuccessMsg" class="text-success"></h6>
+                        <h6 id="loginFailedMsg" class="text-danger"></h6>
+                        <form class="form-signin" id="doLogin" onsubmit="doLogin(event)">
                             <div class="form-label-group">
-                                <input type="text" maxlength="100" id="inputEmail" class="form-control"
+                                <input type="text" maxlength="100" id="Username" class="form-control"
                                     placeholder="Phone/Email address" required autofocus>
-                                <label for="inputEmail">Phone/Email address</label>
+                                <label for="inputEmail">Phone/Username</label>
                             </div>
 
                             <div class="form-label-group">
-                                <input type="password" id="inputPassword" maxlength="100" minlength="4"
-                                    class="form-control" placeholder="Password" required>
+                                <input type="password" id="Password" maxlength="100" minlength="2" class="form-control"
+                                    placeholder="Password" required>
                                 <label for="inputPassword">Password</label>
                             </div>
 
@@ -122,6 +133,25 @@
             </div>
         </div>
     </div>
+
+    <!--json-API-->
+    <!-- <form id="addPostForm">
+        <div>
+            <input type="text" id="Username" placeholder="Username">
+        </div>
+        <div>
+            <input type="Password" id="Password" placeholder="Password">
+        </div>
+
+        <input type="submit" value="submit">
+
+    </form> -->
+
+
+
+
+    <!--json-API-End-->
+
     <!--footer-->
     <footer class="page-footer font-small indigo color mt-4 pt-4">
 
@@ -277,7 +307,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://mdbootstrap.com/education/bootstrap/"> Mst.Rojony Khatun</a>
         </div>
         <!-- Copyright -->

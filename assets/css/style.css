@@ -186,6 +186,9 @@ input[type=submit]:hover {
     left: 0;
     z-index: 1;
 }
+.margin{
+    margin-top: 45px;
+}
 
 .btn-facebook {
     background-color: #405D9D;
@@ -521,4 +524,11 @@ input[type=submit]:hover {
 /* post-page style end */
 
 /* border */
+
+.beforelogin{
+    display: none;
+}
+.afterlogin{
+    display: none;
+}
 

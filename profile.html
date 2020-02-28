@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Paichi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,12 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/js/jwt-decode.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </head>
 <!--Navigation-->
-<!--jdk-->
-<!-- <nav class="navbar navbar navbar-expand-sm  navheight -->
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo2.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -43,18 +44,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="post.html">Post</a>
                 </li>
+                <li class="nav-item beforelogin">
+                    <a class="nav-link " href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item beforelogin">
+                    <a class="nav-link " href="login.html">Login</a>
+                </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown afterlogin">
+                    <a class="nav-link dropdown-toggle showUsername" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Myaccount
+                        Rojony
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Profile</a>
-                        <a class="dropdown-item" href="login.html">Login</a>
-                        <a class="dropdown-item" href="registration.html">Registration</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="profile.html">Profile</a>
+
+                        <a onclick="logOutMe()" class="dropdown-item" href="#">Logout</a>
                     </div>
                 </li>
 
@@ -65,12 +70,12 @@
             </form>
         </div>
     </nav>
-    >
+
     <!-- About section-->
     <div class="container-fluid" id="container">
         <div id="content">
             <h2 class="tiyaColor">Paichi</h2>
-            <p>Paichi is an interseting technique for finding any lost item of a person.just search below</p>
+            <p>Paichi is an awesome technique for finding any lost item of a person.just search below</p>
         </div>
     </div>
 

@@ -17,7 +17,6 @@
 <!--Navigation-->
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo2.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,21 +43,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="post.html">Post</a>
                 </li>
-                <li class="nav-item beforelogin">
-                    <a class="nav-link " href="registration.html">Registration</a>
-                </li>
-                <li class="nav-item beforelogin">
-                    <a class="nav-link " href="login.html">Login</a>
-                </li>
 
-                <li class="nav-item dropdown afterlogin">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle showUsername" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Rojony
+                        Myaccount
                     </a>
-                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item " href="profile.html">Profile</a>
-
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile.html">Profile</a>
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="registration.html">Registration</a>
+                        <div class="dropdown-divider"></div>
                         <a onclick="logOutMe()" class="dropdown-item" href="#">Logout</a>
                     </div>
                 </li>
@@ -69,140 +64,137 @@
                 <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </nav>
-
-
-    <!-- About section-->
-    <div class="container-fluid" id="container">
-        <div id="content">
-            <h2 class="tiyaColor">Contact Us</h2>
-            <p>Paichi is an awesome technique for finding any lost item of a person.just search below</p>
-        </div>
-    </div>
-    <div style="margin-top: 50px"></div>
-    <!-- brid section-->
+    </nav> <!-- Detail section-->
     <div class="container">
-        <nav aria-label="breadcrumb mt-4">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog</li>
-            </ol>
-        </nav>
-    </div> <!-- blog section -->
-    <!------ Include the above in your HEAD tag ---------->
-    <div class="container">
-        <div id="blog" class="row">
+        <div class="row">
 
-            <div class="col-sm-2 paddingTop20">
-                <nav class="nav-sidebar">
-                    <ul class="nav">
-                        <li class=""><a href="javascript:;"><span class="glyphicon glyphicon-star"></span>
-                                News</a>
-                        </li>
-                        <li><a href="javascript:;">Latest news</a></li>
-                        <li><a href="javascript:;">Updates</a></li>
-                        <li><a href="javascript:;">Training</a></li>
-                        <li><a href="javascript:;">Nutrition</a></li>
-                        <li><a href="javascript:;">Proteins</a></li>
-                        <li><a href="javascript:;">Recipes</a></li>
-                        <li><a href="javascript:;">Challenge</a></li>
-                        <li class="nav-divider"></li>
-                        <li><a href="javascript:;"><i class="glyphicon glyphicon-off"></i> Sign in</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <h2 class="add">Place for your add!</h2>
-                </div>
-            </div>
-            <div class="col-md-10 blogShort mt-4 pt-4">
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/images/p3.jpg" alt="post img"
-                            class="pull-left img-responsive thumb margin10 img-thumbnail">
+            <div class="col-md-4 mt-4 pt-4 ">
+                <div class="card mt-4 pt-4 block">
+                    <div class="card-block">
+                        <img src="assets/images/p3.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-8">
+                    <div class="card-text text-center">
+                        <div class="card mt-4 pt-4 block">
+                            <p class="text-center">Title:iphone6 Found</p>
+                            <p class="text-center">Posted by:rojony</p>
+                            <p class="text-center">Date:10/7/2020</p>
+                            <p class="text-center">Location:mirpur</p>
+                            <ul class="list-unstyled list-inline text-center">
+                                <li class="list-inline-item icon-bar ">
+                                    <a class="btn-floating btn-fb facebook mx-1">
+                                        <i class="fa fa-facebook-f"> </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item icon-bar">
+                                    <a class="btn-floating btn-tw  twitter mx-1">
+                                        <i class="fa fa-twitter"> </i>
+                                    </a>
+                                </li>
 
-                        <h1>Title 1</h1>
+                                <li class="list-inline-item icon-bar">
+                                    <a class="btn-floating btn-li linkedin mx-1">
+                                        <i class="fa fa-linkedin"> </i>
+                                    </a>
+                                </li>
 
-
-                        <em>This snippet use <a href="#" target="_blank"> Sidebar Navigation</a></em>
-                        <article>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been
-                                the
-                                industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                make
-                                a
-                                type
-                                specimen book. It has survived not only
-                                five centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged.
-                                It
-                                was popularised in the 1960s with the release
-                                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing
-                                software like Aldus PageMaker including versions of
-                                Lorem Ipsum.
-                            </p>
-                        </article>
-                        <a class="btn  pull-right marginBottom10 active-nav" href="./detail copy.html">READ
-                            MORE</a>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/images/p4.jpg" alt="post img"
-                            class="pull-left img-responsive thumb margin10 img-thumbnail">
-                    </div>
-                    <div class="col-md-8">
-
-                        <h1>Title 1</h1>
-
-
-                        <em>This snippet use <a href="#" target="_blank">Sidebar Navigation</a></em>
-                        <article>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been
-                                the
-                                industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                make
-                                a
-                                type
-                                specimen book. It has survived not only
-                                five centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged.
-                                It
-                                was popularised in the 1960s with the release
-                                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing
-                                software like Aldus PageMaker including versions of
-                                Lorem Ipsum.
-                            </p>
-                        </article>
-
-                        <a class="btn  pull-right marginBottom10 active-nav" href="./detail copy.html">READ
-                            MORE</a>
-
-
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-12 gap10"></div>
+
+            <div class="col-md-8 mt-4 pt-4">
+                <div class="card mt-4 pt-4 block">
+                    <div class="card-block">
+                        <div class="card-title">
+                            <h2>Description</h2>
+                        </div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.
+                        </p>
+                    </div>
+                </div>
+                <!--comment section-->
+
+                <div class="card-title mt-4">
+                    <h2>Comments</h2>
+                </div>
+
+                <div class="detailBox mt-4 ">
+                    <div class="commentBox">
+
+                        <p class="taskDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                    </div>
+                    <div class="actionBox">
+                        <ul class="commentList">
+                            <li>
+                                <div class="commenterImage">
+                                    <img src="http://placekitten.com/50/50" />
+                                </div>
+                                <div class="commentText">
+                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March
+                                        5th,
+                                        2014</span>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="commenterImage">
+                                    <img src="http://placekitten.com/45/45" />
+                                </div>
+                                <div class="commentText">
+                                    <p class="">Hello this is a test comment and this comment is particularly very long
+                                        and
+                                        it goes
+                                        on
+                                        and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="commenterImage">
+                                    <img src="http://placekitten.com/40/40" />
+                                </div>
+                                <div class="commentText">
+                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March
+                                        5th,
+                                        2014</span>
+
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Your comments" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-default">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--comment section-->
+    </div>
+
+    </div>
+
+    </div>
 
 
-    <!--footer-->
+
     <footer class="page-footer font-small indigo color mt-4 pt-4">
 
         <!-- Footer Links -->
@@ -215,7 +207,7 @@
                 <div class="col-md-3 ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase darktiyaColor">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase ">Links</h5>
 
                     <ul class="list-unstyled  text-color">
                         <li>
@@ -241,7 +233,7 @@
                 <div class="col-md-3 ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase darktiyaColor">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase ">Links</h5>
 
                     <ul class="list-unstyled  text-color">
                         <li>
@@ -267,7 +259,7 @@
                 <div class="col-md-3 ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase darktiyaColor ">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase ">Links</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -293,7 +285,7 @@
                 <div class="col-md-3 ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase darktiyaColor">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase ">Links</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -358,14 +350,12 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> Mst.Rojony Khatun</a>
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
         </div>
         <!-- Copyright -->
 
     </footer>
     <!-- Footer -->
-
-
 
 </body>
 

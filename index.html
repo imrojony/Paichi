@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/js/jwt-decode.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </head>
 <!--Navigation-->
 
@@ -42,18 +44,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="post.html">Post</a>
                 </li>
+                <li class="nav-item beforelogin">
+                    <a class="nav-link " href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item beforelogin">
+                    <a class="nav-link " href="login.html">Login</a>
+                </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown afterlogin">
+                    <a class="nav-link dropdown-toggle showUsername" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Myaccount
+                        Rojony
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Profile</a>
-                        <a class="dropdown-item" href="login.html">Login</a>
-                        <a class="dropdown-item" href="registration.html">Registration</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="profile.html">Profile</a>
+
+                        <a onclick="logOutMe()" class="dropdown-item" href="#">Logout</a>
                     </div>
                 </li>
 
@@ -68,10 +74,12 @@
     <!-- About section-->
     <div class="container-fluid" id="container">
         <div id="content">
+
             <h2 class="tiyaColor">Paichi</h2>
-            <p>Paichi is an interseting technique for finding any lost item of a person.just search below</p>
+            <p>Paichi is an awesome technique for finding any lost item of a person.just search below</p>
         </div>
     </div>
+
 
     <!-- Lost Products-->
 
@@ -90,7 +98,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -108,7 +116,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -125,7 +133,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -142,7 +150,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -169,7 +177,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -187,7 +195,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -204,7 +212,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -221,7 +229,7 @@
                             <img src="assets/images/p1.jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Camera</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -244,7 +252,7 @@
                             <img src="assets/images/p9 .jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Mobile</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -262,7 +270,7 @@
                             <img src="assets/images/p9 .jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Mobile</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -279,7 +287,7 @@
                             <img src="assets/images/p9 .jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Mobile</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -296,7 +304,7 @@
                             <img src="assets//images/p9 .jpg" class="img-fluid" alt="">
                         </a>
                         <div class="card-title">
-                            <h3 class="text-center">cemera</h3>
+                            <h3 class="text-center">Mobile</h3>
                         </div>
                         <div class="card-text text-center">
                             <p>location:mirpur</p>
@@ -464,7 +472,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://mdbootstrap.com/education/bootstrap/"> Mst.Rojony Khatun</a>
         </div>
         <!-- Copyright -->
