@@ -61,7 +61,7 @@ function doLogin(event) {
 
 }
 
-
+// registration
 
 function doRegistration(event) {
     event.preventDefault();
@@ -128,6 +128,8 @@ function logOutMe() {
 
 }
 
+// hksj
+
 
 //jquery code
 
@@ -149,3 +151,73 @@ $(document).ready(function () {
         $('.beforelogin').css("display", "block");
     }
 });
+
+
+// postpage
+function doPost(event) {
+    event.preventDefault();
+    let Location = document.getElementById('Location').value;
+    let Mobile = document.getElementById('Mobile').value;
+    let Description = document.getElementById('Description').value;
+    let Type = document.querySelector('input[name="Type"]:checked').value
+
+    let Image = document.getElementById('Image').value;
+
+
+    const myPost = {
+
+        Location: Location,
+        Mobile: Mobile,
+        Description: Description,
+        Type: Type,
+        Image: Image
+
+    }
+    console.log(myPost)
+
+    console.log(localStorage.getItem("token"))
+    fetch('http://192.168.1.103:8080//api/v1/item ', {
+
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + localStorage.getItem("token")
+
+        },
+        body: JSON.stringify(myPost)
+
+    })
+
+        .then((res) => {
+            if (res.ok) {
+                return res.json()
+
+            } else {
+                return Promise.reject({ status: res.status, statusText: res.statusText });
+            }
+        })
+
+        .then((data) => {
+
+
+            document.getElementById("postSuccessMsg").innerHTML = "Post Successfull....";
+            setTimeout(() => {
+                // redirect after 1 second
+                window.location = "/login.html"
+            }, 3000)
+
+        })
+
+        .catch(err => {
+            console.log('Error message: ', err);
+            if (err.status === 401) {
+                document.getElementById("postFailedMsg").innerHTML = "Please Login first to post here .... wait redirecting to login page....";
+
+                setTimeout(() => {
+                    // redirect after 1 second
+                    window.location = "/login.html"
+                }, 1000)
+            }
+
+        });
+}

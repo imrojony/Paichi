@@ -87,43 +87,47 @@
     <!-- About section-->
 
     <!--post page section-->
-    <div class="container  ">
+    <form class="margin" onsubmit="doPost(event)">
+        <div class="container">
 
-        <div class="row ">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 mt-4 pt-4 ">
-                <h2 class="text-center mt-4 pt-4 ">Post your Lost OR Found Item </h2>
-                <form>
+            <div class="row ">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 mt-4 pt-4 ">
+                    <h2 class="text-center mt-4 pt-4 ">Post your Lost OR Found Item </h2>
+
                     <div class="cc-selector post-height">
-                        <input id="visa" type="radio" name="credit-card" value="visa" />
+                        <input id="visa" type="radio" name="Type" value="Found" required />
                         <label class="drinkcard-cc found" for="visa"></label>
-                        <input id="mastercard" type="radio" name="credit-card" value="mastercard" />
+                        <input id="mastercard" type="radio" name="Type" value="Lost" />
                         <label class="drinkcard-cc lost" for="mastercard"></label>
                     </div>
-                </form>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
-    <!-- form -->
-    <div class="container fixed contact style">
-        <form class="margin" action="/action_page.php">
-            <label for="fname">Enter occurrence location</label>
-            <input type="text" id="fname" name="firstname" maxlength="100" minlength="2" placeholder="Enter location..">
 
-            <label for="lname">Enter contact</label>
-            <input type="text" id="lname" name="lastname" maxlength="100" minlength="2" placeholder="Your contact..">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <!-- form -->
+        <div class="container fixed contact style">
+
+            <label for="fname">Enter occurrence location</label>
+            <input type="text" id="Location" name="Location" maxlength="100" minlength="2"
+                placeholder="Enter location..">
+
+            <label for="lname">Enter Mobile</label>
+            <input type="text" id="Mobile" name="Mobile" maxlength="100" minlength="2" placeholder="Your Mobile..">
 
             <label for="subject">Describe</label>
-            <textarea id="subject" name="subject" maxlength="2000" minlength="10" placeholder="Write something.."
-                style="height:200px"></textarea>
+            <textarea id="Description" name="Description" maxlength="2000" minlength="10"
+                placeholder="Write something.." style="height:200px"></textarea>
             <div class="form-group">
                 <label for="fname">Upload item photo</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <input type="file" class="form-control-file" id="Image" name="Image">
             </div>
 
             <input type="submit" value="Submit">
-        </form>
+    </form>
+    <h6 id="postSuccessMsg" class="text-success"></h6>
+    <h6 id="postFailedMsg" class="text-danger"></h6>
     </div>
     <!-- Footer Links -->
     <footer class="page-footer font-small indigo color mt-4 pt-4">
